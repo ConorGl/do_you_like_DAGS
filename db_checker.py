@@ -16,7 +16,8 @@ def select_sql_lite_table():
     conn.close()
     return rows
 
-if __name__ == '__main__':
+
+def print_results():
     results = select_sql_lite_table()
     if results:
         print('date       | active_user_count')
